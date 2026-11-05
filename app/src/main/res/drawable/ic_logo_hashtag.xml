@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Two crossing bars mimic the hashtag mark: left stroke lighter blue, right stroke navy -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewBox="0 0 48 48">
+
+    <!-- Left diagonal bar (brand_blue) -->
+    <path
+        android:fillColor="#2B7FD1"
+        android:pathData="M17,4 L23,4 L18,44 L12,44 Z" />
+
+    <!-- Right diagonal bar (brand_navy) -->
+    <path
+        android:fillColor="#1B2A6B"
+        android:pathData="M30,4 L36,4 L31,44 L25,44 Z" />
+
+    <!-- Horizontal bar top (brand_blue) -->
+    <path
+        android:fillColor="#2B7FD1"
+        android:pathData="M6,15 L42,15 L41,21 L5,21 Z" />
+
+    <!-- Horizontal bar bottom (brand_navy) -->
+    <path
+        android:fillColor="#1B2A6B"
+        android:pathData="M4,27 L40,27 L39,33 L3,33 Z" />
+</vector>
