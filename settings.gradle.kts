@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "home page layout"
+rootProject.name = "ConnectApp"
 include(":app")
  

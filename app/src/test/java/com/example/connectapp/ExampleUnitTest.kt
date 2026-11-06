@@ -1,4 +1,4 @@
-package com.example.homepagelayout
+package com.example.connectapp
 
 import org.junit.Test
 

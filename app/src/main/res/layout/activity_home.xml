@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/surface_light">
@@ -18,6 +19,7 @@
 
             <!-- ===== TOP BAR ===== -->
             <LinearLayout
+                android:id="@+id/topBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -56,7 +58,18 @@
                     android:layout_height="24dp"
                     android:src="@android:drawable/ic_popup_reminder"
                     android:tint="@color/white"
-                    android:contentDescription="Notifications" />
+                    android:contentDescription="Notifications"
+                    android:layout_marginEnd="18dp" />
+
+                <!-- Logout (Firebase signOut) -->
+                <ImageButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_lock_power_off"
+                    android:tint="@color/white"
+                    android:contentDescription="Logout" />
             </LinearLayout>
 
             <!-- ===== TRENDING HASHTAG CHIPS ===== -->
@@ -233,6 +246,7 @@
 
     <!-- ===== FLOATING ACTION BUTTON: NEW POST ===== -->
     <TextView
+        android:id="@+id/fabNewPost"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_gravity="bottom|end"
@@ -248,6 +262,7 @@
 
     <!-- ===== BOTTOM NAVIGATION ===== -->
     <LinearLayout
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_gravity="bottom"
